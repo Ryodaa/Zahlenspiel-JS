@@ -37,6 +37,6 @@ while (result === false) {
             };
         };
     } else {
-        console.log('Error: Bitte Nummer zwischen 1-100 eingeben')
+        console.log('Error: Bitte Nummer zwischen 1-100 eingeben');
     };
 };
