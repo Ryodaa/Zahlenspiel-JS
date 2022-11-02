@@ -8,7 +8,7 @@ let num1 = rndNum(1, 100);
 let result = false;
 let lives = 10;
 
-console.log("Es wurde eine Zahl zwischen 1 und 100 ausgewürfelt, bitte raten sie")
+console.log("Es wurde eine Zahl zwischen 1 und 100 ausgewürfelt, bitte raten sie");
 
 while (result === false) {
 
@@ -30,7 +30,7 @@ while (result === false) {
                 result = true;
             } else if (num1 > n) {
                 console.log(`Nummer ist größer als ${n}`);
-                console.log(`Versuche übrig ${lives}`)
+                console.log(`Versuche übrig ${lives}`);
             } else {
                 console.log(`Nummer ist kleiner als ${n}`);
                 console.log(`Versuche übrig ${lives}`);
