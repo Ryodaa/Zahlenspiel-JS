@@ -31,18 +31,18 @@ while (result === false) {
                 result = true;
             } else if (num1 > n) {
                 console.log(`Nummer ist größer als ${n}`);
-                if(lives > 1) {
+                if (lives > 1) {
                     console.log(`${lives} Versuche übrig`);
                 } else {
                     console.log(`${lives} Versuch übrig`);
-                }
+                };
             } else {
                 console.log(`Nummer ist kleiner als ${n}`);
                 if (lives > 1) {
                     console.log(`${lives} Versuche übrig`);
                 } else {
                     console.log(`${lives} Versuch übrig`);
-                }
+                };
             };
         };
     } else {
