@@ -15,7 +15,7 @@ while (result === false) {
     var prompt = require('prompt-sync')({
         sigint: true
     });
-    var n = prompt('Eingabe: ');
+    var n = Number(prompt('Eingabe: '));
 
     if (n <= 100 && n >= 0) {
         if (n === num1) {
@@ -25,15 +25,24 @@ while (result === false) {
             console.log('Leider Falsch');
             lives--;
             if (lives === 0) {
-                console.log(`${lives} Versuche übrig`)
+                console.log(`${lives} Versuche übrig`);
+                console.log(`Die gesuchte Zahl war: ${num1}`);
                 console.log('Game Over');
                 result = true;
             } else if (num1 > n) {
                 console.log(`Nummer ist größer als ${n}`);
-                console.log(`Versuche übrig ${lives}`);
+                if(lives > 1) {
+                    console.log(`${lives} Versuche übrig`);
+                } else {
+                    console.log(`${lives} Versuch übrig`);
+                }
             } else {
                 console.log(`Nummer ist kleiner als ${n}`);
-                console.log(`Versuche übrig ${lives}`);
+                if (lives > 1) {
+                    console.log(`${lives} Versuche übrig`);
+                } else {
+                    console.log(`${lives} Versuch übrig`);
+                }
             };
         };
     } else {
